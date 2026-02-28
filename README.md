@@ -1,78 +1,116 @@
-# Pre-trained Models
+# 🛡 Truth Lens  
+### Enterprise-Ready Voice Authenticity Intelligence Platform  
 
-This directory contains the pre-trained machine learning models for Truth Lens.
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Framework](https://img.shields.io/badge/Framework-Streamlit-red.svg)
+![ML](https://img.shields.io/badge/Machine%20Learning-Ensemble%20Model-orange.svg)
+![Explainability](https://img.shields.io/badge/XAI-SHAP-green.svg)
+![Security](https://img.shields.io/badge/Cybersecurity-Deepfake%20Detection-black.svg)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+![License](https://img.shields.io/badge/License-Open%20Source-blue.svg)
 
-## Model Files
+> **Enterprise-ready voice authenticity intelligence platform leveraging ensemble ML, anomaly detection, and explainable AI to strengthen cybersecurity and responsible AI governance.**
 
-| File | Size | Description |
-|------|------|-------------|
-| `xgb_model.pkl` | ~5.2 MB | XGBoost classifier (400 estimators) |
-| `rf_model.pkl` | ~8.1 MB | Random Forest classifier (300 estimators) |
-| `scaler.pkl` | ~12 KB | StandardScaler for feature normalization |
-| `cov_matrix.pkl` | ~32 KB | Covariance matrix for OOD detection |
+---
 
-## Download Models
+# 🚨 The Threat Landscape
 
-Models are not included in the repository due to file size. Download them using:
+AI-generated voice deepfakes are enabling:
 
-```bash
-./download_models.sh
-```
+- Financial fraud & CEO impersonation  
+- Social engineering attacks  
+- Identity spoofing  
+- Disinformation campaigns  
+- Manipulated legal evidence  
 
-Or manually from [GitHub Releases](https://github.com/yourusername/truth-lens/releases).
+Traditional systems lack:
+- Transparency  
+- Reliability scoring  
+- Anomaly detection  
+- Forensic-grade reporting  
 
-## Model Details
+Truth Lens addresses these gaps.
 
-### Training Dataset
-- **Source**: ASVspoof 2019 Logical Access
-- **Samples**: 3,200 total (1,600 real, 1,600 fake)
-- **Split**: 80% training, 20% validation
-- **Cross-validation**: 5-fold stratified
+---
 
-### Performance
-- **Accuracy**: 94.2%
-- **ROC-AUC**: 0.982
-- **Precision**: 93.8%
-- **Recall**: 94.6%
-- **F1-Score**: 94.2%
+# 💡 Solution Overview
 
-### Model Specifications
+Truth Lens combines:
 
-#### XGBoost
-```python
-{
-    'n_estimators': 400,
-    'max_depth': 6,
-    'learning_rate': 0.04,
-    'subsample': 0.9,
-    'colsample_bytree': 0.9,
-    'objective': 'binary:logistic'
-}
-```
+- 🎙 Deepfake Voice Detection  
+- 🧠 Ensemble Machine Learning  
+- 🚨 Out-of-Distribution Detection  
+- 🔍 Explainable AI (SHAP)  
+- 📊 Acoustic Forensic Visualization  
+- 📄 Court-Style PDF Report Generation  
 
-#### Random Forest
-```python
-{
-    'n_estimators': 300,
-    'max_depth': 12,
-    'bootstrap': True,
-    'max_features': 'sqrt'
-}
-```
+This creates a **decision-support intelligence layer**, not a black-box classifier.
 
-## Verification
+---
 
-After downloading, verify file integrity:
+# 🛡 Truth Lens  
+### Enterprise-Ready Voice Authenticity Intelligence Platform  
 
-```bash
-ls -lh models/
-# Should show all 4 .pkl files with correct sizes
-```
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Framework](https://img.shields.io/badge/Framework-Streamlit-red.svg)
+![ML](https://img.shields.io/badge/Machine%20Learning-Ensemble%20Model-orange.svg)
+![Explainability](https://img.shields.io/badge/XAI-SHAP-green.svg)
+![Security](https://img.shields.io/badge/Cybersecurity-Deepfake%20Detection-black.svg)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+![License](https://img.shields.io/badge/License-Open%20Source-blue.svg)
 
-## Retraining
+> **Enterprise-ready voice authenticity intelligence platform leveraging ensemble ML, anomaly detection, and explainable AI to strengthen cybersecurity and responsible AI governance.**
 
-To retrain models with your own data, see [docs/TRAINING.pdf](../docs/TRAINING.pdf).
+---
 
-## License
+# 🚨 The Threat Landscape
 
-Models are licensed under MIT License. See [LICENSE](../LICENSE).
+AI-generated voice deepfakes are enabling:
+
+- Financial fraud & CEO impersonation  
+- Social engineering attacks  
+- Identity spoofing  
+- Disinformation campaigns  
+- Manipulated legal evidence  
+
+Traditional systems lack:
+- Transparency  
+- Reliability scoring  
+- Anomaly detection  
+- Forensic-grade reporting  
+
+Truth Lens addresses these gaps.
+
+---
+
+# 💡 Solution Overview
+
+Truth Lens combines:
+
+- 🎙 Deepfake Voice Detection  
+- 🧠 Ensemble Machine Learning  
+- 🚨 Out-of-Distribution Detection  
+- 🔍 Explainable AI (SHAP)  
+- 📊 Acoustic Forensic Visualization  
+- 📄 Court-Style PDF Report Generation  
+
+This creates a **decision-support intelligence layer**, not a black-box classifier.
+
+---
+
+# 🏗 System Architecture
+
+```mermaid
+flowchart TD
+    A[Audio Input] --> B[Feature Extraction Engine]
+    B --> C[Feature Scaling]
+    C --> D1[XGBoost Model]
+    C --> D2[Random Forest Model]
+    D1 --> E[Ensemble Fusion Layer]
+    D2 --> E
+    E --> F[Fraud Risk Scoring]
+    C --> G[OOD Detection (Mahalanobis)]
+    F --> H[Decision Engine]
+    G --> H
+    H --> I[SHAP Explainability]
+    H --> J[Forensic PDF Report]
