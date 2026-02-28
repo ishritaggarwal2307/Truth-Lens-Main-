@@ -98,19 +98,24 @@ This creates a **decision-support intelligence layer**, not a black-box classifi
 
 ---
 
-# 🏗 System Architecture
+## 🏗 System Architecture
 
 ```mermaid
 flowchart TD
     A[Audio Input] --> B[Feature Extraction Engine]
     B --> C[Feature Scaling]
+
     C --> D1[XGBoost Model]
     C --> D2[Random Forest Model]
+
     D1 --> E[Ensemble Fusion Layer]
     D2 --> E
-    E --> F[Fraud Risk Scoring]
-    C --> G[OOD Detection (Mahalanobis)]
+
+    E --> F[Fraud Risk Scoring Engine]
+    C --> G[OOD Detection - Mahalanobis Distance]
+
     F --> H[Decision Engine]
     G --> H
-    H --> I[SHAP Explainability]
-    H --> J[Forensic PDF Report]
+
+    H --> I[SHAP Explainability Layer]
+    H --> J[Forensic PDF Report Generator]
