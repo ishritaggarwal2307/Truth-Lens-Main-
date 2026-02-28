@@ -1,0 +1,52 @@
+# Truth Lens - Docker Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation (not needed in container)
+docs/
+*.md
+!README.md
+
+# Tests (not needed in container)
+tests/
+*.test
+
+# Logs
+*.log
+
+# Temporary files
+temp/
+tmp/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Development files
+Makefile
+docker-compose.yml
+*.bak
